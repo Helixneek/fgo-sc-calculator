@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## SC Calculator
 
-You can use the [editor on GitHub](https://github.com/Helixneek/helixneek.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Instructions
 
-### Markdown
+1. Choose the class of the servant you are looking for.
+2. Choose the servant that you want to check.
+3. Enter the desired bond level of that servant, between bond 0 to bond 15.
+4. Enter the desired NP level of that servant. Extra copies of an NP5 servant will also count.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Contact
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Helixneek/helixneek.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+No.
