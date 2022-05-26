@@ -339,3 +339,16 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 340, "name": "Daikokuten", "class": "caster", "rarity": "sr", "available": "limited"},
                     {"id": 341, "name": "Mary Anning", "class": "lancer", "rarity": "c", "available": "limited"},
                     {"id": 342, "name": "Constantine IX", "class": "rider", "rarity": "ssr", "available": "limited"}]
+
+function compare_name( a, b )
+  {
+  if ( a.name.toLowerCase() < b.name.toLowerCase()){
+    return -1;
+  }
+  if ( a.name.toLowerCase() > b.name.toLowerCase()){
+    return 1;
+  }
+  return 0;
+}
+                    
+servantList.sort(compare_name);
