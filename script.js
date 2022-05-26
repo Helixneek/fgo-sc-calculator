@@ -29,7 +29,9 @@ $("#servant-class").change(function () {
     var nplvl = parseFloat($('#np-level').val());
     var bondlvl = parseFloat($('#bond-level').val());
 
-    if(servRarity == "angra") {
+    if (servAva == "welfare") {
+        rarityAva = 0;
+    } else if(servRarity == "angra") {
         rarityAva = 50;
     } else if (servRarity == "c") {
         rarityAva = 2;
