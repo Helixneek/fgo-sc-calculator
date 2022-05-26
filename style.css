@@ -19,6 +19,17 @@ select {
     background-color: white;
 }
 
+.hr {
+    width: 90%;
+    border: 1px solid gray;
+    margin: 100px auto;
+}
+
+.change-log {
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
 .topbar {
     height: 130px;
     padding: 30px 30px 0 30px;
