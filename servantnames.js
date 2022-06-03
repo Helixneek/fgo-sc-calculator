@@ -338,7 +338,10 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 339, "name": "Super Bunyan", "class": "alterego", "rarity": "ssr", "available": "limited"},
                     {"id": 340, "name": "Daikokuten", "class": "caster", "rarity": "sr", "available": "limited"},
                     {"id": 341, "name": "Mary Anning", "class": "lancer", "rarity": "c", "available": "limited"},
-                    {"id": 342, "name": "Constantine IX", "class": "rider", "rarity": "ssr", "available": "limited"}]
+                    {"id": 342, "name": "Constantine IX", "class": "rider", "rarity": "ssr", "available": "limited"},
+                    {"id": 343, "name": "Charlemagne", "class": "saber", "rarity": "ssr", "available": "limited"},
+                    {"id": 344, "name": "Roland", "class": "saber", "rarity": "sr", "available": "permanent"},
+                    {"id": 345, "name": "Kriemhild", "class": "berserker", "rarity": "sr", "available": "limited"}]
 
 function compare_name( a, b )
   {
