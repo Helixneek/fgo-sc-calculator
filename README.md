@@ -1,6 +1,6 @@
-## SC Calculator
+## FGO SC Calculator
 
-SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
+FGO SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
 ### Instructions
 
