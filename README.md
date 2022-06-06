@@ -2,6 +2,8 @@
 
 FGO SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
+Check out the website [here](https://helixneek.github.io/fgosc.html).
+
 ### Instructions
 
 1. Choose the class of the servant you are looking for.
