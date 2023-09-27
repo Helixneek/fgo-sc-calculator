@@ -2,7 +2,7 @@
 
 FGO SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
-Check out the website [here](https://helixneek.github.io/fgosc.html).
+Contains servants up to Wandjina (ID 393).
 
 ### Instructions
 
@@ -11,6 +11,5 @@ Check out the website [here](https://helixneek.github.io/fgosc.html).
 3. Enter the desired bond level of that servant, between bond 0 to bond 15.
 4. Enter the desired NP level of that servant. Extra copies of an NP5 servant will also count.
 
-### Contact
-
-No.
+### How to run
+Just open the .html file on your device.
