@@ -390,9 +390,27 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 391, "name": "UDK-Barghest", "class": "archer", "rarity": "sr", "available": "limited"},
                     {"id": 392, "name": "Cait Cú Cerpriestess", "class": "pretender", "rarity": "sr", "available": "limited"},
                     {"id": 393, "name": "Wandjina", "class": "foreigner", "rarity": "ssr", "available": "limited"},
-                    {"id": 393, "name": "Ptolemaios", "class": "archer", "rarity": "ssr", "available": "limited"},
-                    {"id": 393, "name": "Sugitani Zenjubo", "class": "archer", "rarity": "r", "available": "permanent"},
-                    {"id": 393, "name": "Theseus", "class": "saber", "rarity": "r", "available": "permanent"}]
+                    {"id": 394, "name": "Ptolemaios", "class": "archer", "rarity": "ssr", "available": "limited"},
+                    {"id": 395, "name": "Sugitani Zenjubo", "class": "archer", "rarity": "r", "available": "permanent"},
+                    {"id": 396, "name": "Theseus", "class": "saber", "rarity": "r", "available": "permanent"},
+                    {"id": 397, "name": "Takeda Shingen", "class": "rider", "rarity": "ssr", "available": "limited"},
+                    {"id": 398, "name": "Nakagura Shinpachi", "class": "berserker", "rarity": "sr", "available": "limited"},
+                    {"id": 399, "name": "Saika Magoichi", "class": "archer", "rarity": "sr", "available": "welfare"},
+                    {"id": 400, "name": "Uesugi Kenshin", "class": "ruler", "rarity": "ssr", "available": "limited"},
+                    {"id": 401, "name": "Nemo (Santa)", "class": "rider", "rarity": "sr", "available": "welfare"},
+                    {"id": 402, "name": "Yamato Takeru", "class": "saber", "rarity": "ssr", "available": "limited"},
+                    {"id": 403, "name": "Minamoto no Raikou/Ushi Gozen", "class": "avenger", "rarity": "ssr", "available": "limited"},
+                    {"id": 404, "name": "Yui Shousetsu", "class": "caster", "rarity": "sr", "available": "limited"},
+                    {"id": 405, "name": "Miyamoto Iori", "class": "saber", "rarity": "sr", "available": "welfare"},
+                    {"id": 406, "name": "Andromeda", "class": "rider", "rarity": "ssr", "available": "limited"},
+                    {"id": 407, "name": "Marie Antoinette (Alter)", "class": "avenger", "rarity": "ssr", "available": "limited"},
+                    {"id": 408, "name": "Hassan of the Shining Star", "class": "assassin", "rarity": "sr", "available": "permanent"},
+                    {"id": 409, "name": "King of the Cavern, Monte Cristo", "class": "avenger", "rarity": "ssr", "available": "limited"},
+                    {"id": 410, "name": "Alessandro di Cagliostro", "class": "pretender", "rarity": "sr", "available": "limited"},
+                    {"id": 413, "name": "Aozaki Aoko", "class": "foreigner", "rarity": "ssr", "available": "limited"},
+                    {"id": 414, "name": "Shizuki Soujuurou", "class": "berserker", "rarity": "sr", "available": "welfare"},
+                    {"id": 415, "name": "Kuonji Alice", "class": "caster", "rarity": "ssr", "available": "limited"},
+                    {"id": 416, "name": "Azumi no Isora (Hibiki & Chikagi)", "class": "alterego", "rarity": "ssr", "available": "limited"}]
 
 function compare_name( a, b )
   {
