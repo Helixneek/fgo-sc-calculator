@@ -410,7 +410,8 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 413, "name": "Aozaki Aoko", "class": "foreigner", "rarity": "ssr", "available": "limited"},
                     {"id": 414, "name": "Shizuki Soujuurou", "class": "berserker", "rarity": "sr", "available": "welfare"},
                     {"id": 415, "name": "Kuonji Alice", "class": "caster", "rarity": "ssr", "available": "limited"},
-                    {"id": 416, "name": "Azumi no Isora (Hibiki & Chikagi)", "class": "alterego", "rarity": "ssr", "available": "limited"}]
+                    {"id": 416, "name": "Azumi no Isora (Hibiki & Chikagi)", "class": "alterego", "rarity": "ssr", "available": "limited"},
+                    {"id": 417, "name": "Space Ereshkigal", "class": "beast", "rarity": "ssr", "available": "limited"}]
 
 function compare_name( a, b )
   {
