@@ -2,7 +2,7 @@
 
 FGO SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
-Contains servants up to Wandjina (ID 393).
+Contains servants up to Space Ereshkigal (ID 417).
 
 ### Instructions
 

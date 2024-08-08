@@ -1,130 +1,216 @@
 <html>
-    <head>
-        <title>FGO SC Calculator</title>
-        <link rel="icon" type="image/x-icon" href="img/coin1.jpg">
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
-    </head>
+  <head>
+    <title>FGO SC Calculator</title>
+    <link rel="icon" type="image/x-icon" href="img/coin1.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+  </head>
 
-    <body style="background-color: #f0f0f0;">
-        <header>
-            <div class="topbar slide-in-top">
-                <div class="top-container">
-                    <img class="top-img" src="img/coin1.jpg">
-                    <div class="top-text">
-                        <h1>FGO Servant Coin Calculator</h1>
-                        <h5>A calculator to count Servant Coins.</h5>
-                    </div>
-                    <img class="top-img" src="img/coin1.jpg">
-                </div>
-            </div>
-        </header>
-
-        <form id="coins" novalidate>
-        <div class="container">
-            <div class="row justify-content-between">
-            <div class="card text-center col-8" style="width: 60rem;">
-                <div class="card-body">
-                    <div class="container input-place">
-                        <div class="row align-items-start">
-                            <div class="col-6">
-                                <label class="class-label" for="servant-class">Servant Class:</label><br>
-                                <select class="type-select" name="servant-class" id="servant-class" required>
-                                    <option value="" disabled selected>--Class--</option>
-                                    <option value="Saber">Saber</option>
-                                    <option value="Archer">Archer</option>
-                                    <option value="Lancer">Lancer</option>
-                                    <option value="Caster">Caster</option>
-                                    <option value="Assassin">Assassin</option>
-                                    <option value="Rider">Rider</option>
-                                    <option value="Berserker">Berserker</option>
-                                    <option value="Ruler">Ruler</option>
-                                    <option value="Avenger">Avenger</option>
-                                    <option value="Moon Cancer">Moon Cancer</option>
-                                    <option value="Alter Ego">Alter Ego</option>
-                                    <option value="Foreigner">Foreigner</option>
-                                    <option value="Pretender">Pretender</option>
-                                    <option value="Beast">Beast</option>
-                                </select>
-                            </div>
-
-                            <div class="col-6">
-                                <label class="class-label" for="servant-name">Servant Name:</label><br>
-                                <select class="type-select2" name="servant-name" id="servant-name">
-                                    <option value="" disabled selected>--Servant--</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-                    <div class="container input-place">
-                        <div class="row align-items-start">
-                            <div class="col-6">
-                                <label class="class-label" for="bond-level">Bond Level:</label><br>
-                                <input class="type-select3" type="number" id="bond-level" name="bond-level" min="0" max="15" required>
-                            </div>
-
-                            <div class="col-6">
-                                <label class="class-label" for="np-level">NP Level (including extra copies):</label><br>
-                                <input class="type-select3" type="number" id="np-level" name="np-level" min="1" required>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <br><br><br>
-                    <button type="submit" class="btn btn-outline-primary btn-lg text-center">Calculate</button>
-                </div>
-            </div>
-
-            <div class="card text-center col-4" style="width: 20rem; height: 10rem;">
-                <div class="card-body">
-                    <div class="container input-place">
-                        <div class="col align-self-center">
-                            <h3 class="class-label">Servant Coins:</h3><br>
-                            <input type="number" id="coin-result" name="coin-result" value="0" readonly>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div></div>
-        </form>
-
-        <div class="change-log">
-            <h4>Notes:</h4>
-            <ul>
-                <li><h6>The servant list is sorted alphabetically.</h6></li>
-                <li><h6>Welfare servants do not gain any coins from NP levels.</h6></li>
-                <li><h6>Altria Pendragon (Lily) and Habetrot can gain coins from NP levels.</h6></li>
-                <li><h6>Mash Kyrielight can only gain coins from Bond levels. She gains 10 coins for every level between level 1 to 4. She gains 20 coins
-                    for every level between level 5 and 8.</h6></li>
-            </ul>
+  <body style="background-color: #f0f0f0">
+    <header>
+      <div class="topbar slide-in-top">
+        <div class="top-container">
+          <img class="top-img" src="img/coin1.jpg" />
+          <div class="top-text">
+            <h1>FGO Servant Coin Calculator</h1>
+            <h5>A calculator to count Servant Coins.</h5>
+          </div>
+          <img class="top-img" src="img/coin1.jpg" />
         </div>
+      </div>
+    </header>
 
-        <div class="hr"></div>
+    <form id="coins" novalidate>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="card text-center col-8" style="width: 60rem">
+            <div class="card-body">
+              <div class="container input-place">
+                <div class="row align-items-start">
+                  <div class="col-6">
+                    <label class="class-label" for="servant-class"
+                      >Servant Class:</label
+                    ><br />
+                    <select
+                      class="type-select"
+                      name="servant-class"
+                      id="servant-class"
+                      required
+                    >
+                      <option value="" disabled selected>--Class--</option>
+                      <option value="Saber">Saber</option>
+                      <option value="Archer">Archer</option>
+                      <option value="Lancer">Lancer</option>
+                      <option value="Caster">Caster</option>
+                      <option value="Assassin">Assassin</option>
+                      <option value="Rider">Rider</option>
+                      <option value="Berserker">Berserker</option>
+                      <option value="Ruler">Ruler</option>
+                      <option value="Avenger">Avenger</option>
+                      <option value="Moon Cancer">Moon Cancer</option>
+                      <option value="Alter Ego">Alter Ego</option>
+                      <option value="Foreigner">Foreigner</option>
+                      <option value="Pretender">Pretender</option>
+                      <option value="Beast">Beast</option>
+                    </select>
+                  </div>
 
+                  <div class="col-6">
+                    <label class="class-label" for="servant-name"
+                      >Servant Name:</label
+                    ><br />
+                    <select
+                      class="type-select2"
+                      name="servant-name"
+                      id="servant-name"
+                    >
+                      <option value="" disabled selected>--Servant--</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
-        <div class="change-log">
-            <h4>Change Log:</h4>
-            <h6><b>30/10/2023:</b> Added Ptolemaios, Sugitani Zenjubo and Theseus.</h6>
-            <h6><b>27/09/2023:</b> Added every servant up to Wandjina after Kyokutei Bakin. (I forgot to actually update this :))</h6>
-            <h6><b>30/06/2022:</b> Added Kyokutei Bakin.</h6>
-            <h6><b>08/06/2022:</b> Added James Moriarty (Ruler), Don Quixote and Zhang Jiao.</h6>
-            <h6><b>03/06/2022:</b> Added Charlemagne, Roland and Kriemhild.</h6>
-            <h6><b>27/05/2022:</b> Sorted the servant list alphabetically. Also added the changelog.</h6>
-            <h6><b>26/05/2022:</b> The website is released.</h6>
+              <br />
+              <div class="container input-place">
+                <div class="row align-items-start">
+                  <div class="col-6">
+                    <label class="class-label" for="bond-level"
+                      >Bond Level:</label
+                    ><br />
+                    <input
+                      class="type-select3"
+                      type="number"
+                      id="bond-level"
+                      name="bond-level"
+                      min="0"
+                      max="15"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-6">
+                    <label class="class-label" for="np-level"
+                      >NP Level (including extra copies):</label
+                    ><br />
+                    <input
+                      class="type-select3"
+                      type="number"
+                      id="np-level"
+                      name="np-level"
+                      min="1"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <br /><br /><br />
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-lg text-center"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card text-center col-4"
+            style="width: 20rem; height: 10rem"
+          >
+            <div class="card-body">
+              <div class="container input-place">
+                <div class="col align-self-center">
+                  <h3 class="class-label">Servant Coins:</h3>
+                  <br />
+                  <input
+                    type="number"
+                    id="coin-result"
+                    name="coin-result"
+                    value="0"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </form>
 
-        <h6 class="credit-text">Inspired by: <a href="https://maketakunai.github.io/">maketakunai</a></h6>
-        <h6 class="mid-text">Data used courtesy of <a href="https://apps.atlasacademy.io/db/">Atlas Academy DB</a>  
-            and <a href="https://fategrandorder.fandom.com/wiki/Fate/Grand_Order_Wikia">Fandom</a></h6>
-        <h6 class="mercy-text">Have mercy on my beginner code :)</h6>
+    <div class="change-log">
+      <h4>Notes:</h4>
+      <ul>
+        <li><h6>The servant list is sorted alphabetically.</h6></li>
+        <li><h6>Welfare servants do not gain any coins from NP levels.</h6></li>
+        <li>
+          <h6>
+            Altria Pendragon (Lily) and Habetrot can gain coins from NP levels.
+          </h6>
+        </li>
+        <li>
+          <h6>
+            Mash Kyrielight can only gain coins from Bond levels. She gains 10
+            coins for every level between level 1 to 4. She gains 20 coins for
+            every level between level 5 and 8.
+          </h6>
+        </li>
+      </ul>
+    </div>
 
-        <script src="servantnames.js" type="text/javascript"></script>
-        <script src="script.js" type="text/javascript"></script>
-    </body>
+    <div class="hr"></div>
+
+    <div class="change-log">
+      <h4>Change Log:</h4>
+      <h6>
+        <b>04/08/2024:</b> Added Space Ereshkigal.
+      </h6>
+      <h6>
+        <b>30/10/2023:</b> Added Ptolemaios, Sugitani Zenjubo and Theseus.
+      </h6>
+      <h6>
+        <b>27/09/2023:</b> Added every servant up to Wandjina after Kyokutei
+        Bakin. (I forgot to actually update this :))
+      </h6>
+      <h6><b>30/06/2022:</b> Added Kyokutei Bakin.</h6>
+      <h6>
+        <b>08/06/2022:</b> Added James Moriarty (Ruler), Don Quixote and Zhang
+        Jiao.
+      </h6>
+      <h6><b>03/06/2022:</b> Added Charlemagne, Roland and Kriemhild.</h6>
+      <h6>
+        <b>27/05/2022:</b> Sorted the servant list alphabetically. Also added
+        the changelog.
+      </h6>
+      <h6><b>26/05/2022:</b> The website is released.</h6>
+    </div>
+
+    <h6 class="credit-text">
+      Inspired by: <a href="https://maketakunai.github.io/">maketakunai</a>
+    </h6>
+    <h6 class="mid-text">
+      Data used courtesy of
+      <a href="https://apps.atlasacademy.io/db/">Atlas Academy DB</a> and
+      <a href="https://fategrandorder.fandom.com/wiki/Fate/Grand_Order_Wikia"
+        >Fandom</a
+      >
+    </h6>
+    <h6 class="mercy-text">Have mercy on my beginner code :)</h6>
+
+    <script src="servantnames.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
 </html>
