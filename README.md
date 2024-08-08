@@ -10,6 +10,3 @@ Contains servants up to Space Ereshkigal (ID 417).
 2. Choose the servant that you want to check.
 3. Enter the desired bond level of that servant, between bond 0 to bond 15.
 4. Enter the desired NP level of that servant. Extra copies of an NP5 servant will also count.
-
-### How to run
-Just open the .html file on your device.
