@@ -284,7 +284,7 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 285, "name": "Sessyoin Kiara (Moon Cancer)", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
                     {"id": 286, "name": "Illyasviel von Einzbern (Archer)", "class": "archer", "rarity": "sr", "available": "limited"},
                     {"id": 287, "name": "Brynhildr (Berserker)", "class": "berserker", "rarity": "sr", "available": "limited"},
-                    {"id": 288, "name": "Yu-Meiren (Lancer)", "class": "lancer", "rarity": "sr", "available": "welfare"},
+                    {"id": 288, "name": "Yu Mei-ren (Lancer)", "class": "lancer", "rarity": "sr", "available": "welfare"},
                     {"id": 289, "name": "Abigail Williams (Summer)", "class": "foreigner", "rarity": "ssr", "available": "limited"},
                     {"id": 290, "name": "Tomoe Gozen (Saber)", "class": "saber", "rarity": "sr", "available": "limited"},
                     {"id": 291, "name": "Murasaki Shikibu (Rider)", "class": "rider", "rarity": "sr", "available": "limited"},
@@ -328,7 +328,7 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 329, "name": "Sakamoto Ryouma (Lancer)", "class": "lancer", "rarity": "ssr", "available": "limited"},
                     {"id": 330, "name": "Martha (Santa)", "class": "caster", "rarity": "sr", "available": "welfare"},
                     {"id": 331, "name": "Tai Gong Wang", "class": "rider", "rarity": "ssr", "available": "permanent"},
-                    {"id": 332, "name": "Dobrynya Nikitch", "class": "rider", "rarity": "sr", "available": "permanent"},
+                    {"id": 332, "name": "Dobrynya Nikitich", "class": "rider", "rarity": "sr", "available": "permanent"},
                     //id 333 is Beast IV
                     {"id": 334, "name": "Koyanskaya of Darkness", "class": "foreigner", "rarity": "ssr", "available": "limited"},
                     {"id": 335, "name": "Hephaestion", "class": "pretender", "rarity": "sr", "available": "permanent"},
@@ -407,11 +407,15 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 408, "name": "Hassan of the Shining Star", "class": "assassin", "rarity": "sr", "available": "permanent"},
                     {"id": 409, "name": "King of the Cavern, Monte Cristo", "class": "avenger", "rarity": "ssr", "available": "limited"},
                     {"id": 410, "name": "Alessandro di Cagliostro", "class": "pretender", "rarity": "sr", "available": "limited"},
+                    // id 411 and 412 are spoilers in NA
                     {"id": 413, "name": "Aozaki Aoko", "class": "foreigner", "rarity": "ssr", "available": "limited"},
                     {"id": 414, "name": "Shizuki Soujuurou", "class": "berserker", "rarity": "sr", "available": "welfare"},
                     {"id": 415, "name": "Kuonji Alice", "class": "caster", "rarity": "ssr", "available": "limited"},
                     {"id": 416, "name": "Azumi no Isora (Hibiki & Chikagi)", "class": "alterego", "rarity": "ssr", "available": "limited"},
-                    {"id": 417, "name": "Space Ereshkigal", "class": "beast", "rarity": "ssr", "available": "limited"}]
+                    {"id": 417, "name": "Space Ereshkigal", "class": "beast", "rarity": "ssr", "available": "limited"},
+                    {"id": 418, "name": "Mysterious Executor C.I.E.L", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
+                    {"id": 419, "name": "Dobrynya Nikitich (Lancer)", "class": "lancer", "rarity": "sr", "available": "limited"},
+                    {"id": 420, "name": "Xu Fu (Avenger)", "class": "avenger", "rarity": "sr", "available": "limited"}]
 
 function compare_name( a, b )
   {
