@@ -2,7 +2,7 @@
 
 FGO SC Calculator is a website that lets you check the amount of Servant Coins you have based on which Servant, their bond level and their NP level.
 
-Contains servants up to Space Ereshkigal (ID 417).
+Contains servants up to Xu Fu (ID 420).
 
 ### Instructions
 
