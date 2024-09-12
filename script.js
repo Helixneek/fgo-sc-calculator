@@ -86,10 +86,14 @@ function CalculateBondCoins(bond) {
 
     if(bond < 7) { // 5 coins per level for levels 1-6
         bondCoin = bond * 5;
-    } else if (bond < 10) { // 10 coins per level for levels 7-9 + 30 coins for levels 1-6
-        bondCoin = ((bond - 6) * 10) + 30;
-    } else if (bond <= 15) { // 20 coins per level for levels 10-15 + 30 coins for levels 1-6 + 30 coins for levels 7-9
-        bondCoin = ((bond - 9) * 20) + 60;
+    } else if (bond < 10) { // 20 coins per level for levels 7-9 + 30 coins for levels 1-6
+        bondCoin = ((bond - 6) * 20) + 30;
+    } else if (bond === 10) { // 40 coins for level 10 + 30 coins for levels 1-6 + 60 coins for levels 7-9
+        bondCoin = 130;
+    } else if (bond === 11) { // 50 coins for level 11 + 40 coins for level 10 + 30 coins for levels 1-6 + 60 coins for levels 7-9
+        bondCoin = 180;
+    } else if (bond > 11 && bond <= 15) { // 60 coins per level for levels 12-15 + 50 coins for level 11 + 40 coins for level 10 + 30 coins for levels 1-6 + 30 coins for levels 7-9
+        bondCoin = ((bond - 8) * 60);
     }
 
     return bondCoin;

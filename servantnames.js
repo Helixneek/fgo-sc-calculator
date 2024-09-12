@@ -415,7 +415,10 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 417, "name": "Space Ereshkigal", "class": "beast", "rarity": "ssr", "available": "limited"},
                     {"id": 418, "name": "Mysterious Executor C.I.E.L", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
                     {"id": 419, "name": "Dobrynya Nikitich (Lancer)", "class": "lancer", "rarity": "sr", "available": "limited"},
-                    {"id": 420, "name": "Xu Fu (Avenger)", "class": "avenger", "rarity": "sr", "available": "limited"}]
+                    {"id": 420, "name": "Xu Fu (Avenger)", "class": "avenger", "rarity": "sr", "available": "limited"},
+                    {"id": 421, "name": "BB Dubai", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
+                    {"id": 422, "name": "Tenochtitlan (Moon Cancer)", "class": "mooncancer", "rarity": "sr", "available": "limited"},
+                    {"id": 423, "name": "Mysterious Heroine XX (Alter)", "class": "foreigner", "rarity": "srr", "available": "limited"}]
 
 function compare_name( a, b )
   {
