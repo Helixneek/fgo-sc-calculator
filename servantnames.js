@@ -418,7 +418,15 @@ const servantList = [{"id": 2, "name": "Altria Pendragon", "class": "saber", "ra
                     {"id": 420, "name": "Xu Fu (Avenger)", "class": "avenger", "rarity": "sr", "available": "limited"},
                     {"id": 421, "name": "BB Dubai", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
                     {"id": 422, "name": "Tenochtitlan (Moon Cancer)", "class": "mooncancer", "rarity": "sr", "available": "limited"},
-                    {"id": 423, "name": "Mysterious Heroine XX (Alter)", "class": "foreigner", "rarity": "srr", "available": "limited"}]
+                    {"id": 423, "name": "Mysterious Heroine XX (Alter)", "class": "foreigner", "rarity": "ssr", "available": "limited"},
+                    {"id": 424, "name": "Kishinami Hakuno (Male)", "class": "mooncancer", "rarity": "ssr", "available": "limited"},
+                    {"id": 425, "name": "Kishinami Hakuno (Female)", "class": "mooncancer", "rarity": "sr", "available": "limited"},
+                    {"id": 426, "name": "Kazuradrop", "class": "alterego", "rarity": "ssr", "available": "limited"},
+                    {"id": 427, "name": "Tutankhamun", "class": "archer", "rarity": "ssr", "available": "limited"},
+                    {"id": 428, "name": "Van Gogh (Miner)", "class": "lancer", "rarity": "sr", "available": "welfare"},
+                    {"id": 429, "name": "Louhi", "class": "berserker", "rarity": "ssr", "available": "permanent"},
+                    {"id": 430, "name": "Abigail Williams (Santa)", "class": "pretender", "rarity": "sr", "available": "welfare"},
+                    {"id": 431, "name": "Phantasmoon", "class": "pretender", "rarity": "ssr", "available": "limited"}]
 
 function compare_name( a, b )
   {
