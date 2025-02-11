@@ -49,10 +49,13 @@ function CalculateRarityAvailableCoins(rarity, available) {
             return 90;
         
         case "sr":
-            if(available == "permanent") {
+            if(available == "welfare") {
+                return 0;
+            }
+            else if(available == "permanent" || available == "fpgacha") {
                 return 30;
             } 
-            else if(available == "limited") {
+            else if(available == "limited" || available == "story") {
                 return 50;
             }
         
@@ -60,7 +63,7 @@ function CalculateRarityAvailableCoins(rarity, available) {
             if(available == "permanent") {
                 return 15;
             } 
-            else if(available == "limited") {
+            else if(available == "limited" || available == "story") {
                 return 30;
             }
 
